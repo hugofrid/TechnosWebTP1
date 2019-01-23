@@ -1,14 +1,23 @@
+
+
 html,body
 {
 	margin:0;
 	width: 100%;
 	height: 100%;
+	font-family: 'Fugaz One', cursive;
 
 }
 
 h1
 {
 	margin:0;
+}
+
+h2
+{
+	margin-top:50px;
+	margin-left: 10px;
 }
 
 header
@@ -21,26 +30,51 @@ header
 	color: white;
 	text-align: center;
 	z-index: 2;
+	border-bottom: 2px solid #057a7a;
 }
 
 .content
 {
+
 	width: 100%;
 	height: 100%;
-	padding-top:50px;
+
 }
 
+#experience
+{
+	border-radius: 25px 25px 25px 25px;
+	width: 90%;
+	transform: translateX(5%);
+ 	color: white;
+	background:rgba(121, 5, 9);
+}
 .part
 {
 	float:left;
 	width: 100%;
 }
 
+#logo
+{
+	display: flex;
+}
+
+
+
+#logo article 
+{
+
+	width: 14%;
+	margin:auto;
+	text-align: center;
+	flex-direction: row;
+}
 
 #logo img
 {
-	width: 14%;
-	margin:5px;
+	width:100%;
+
 }
 
 #animation
@@ -48,6 +82,7 @@ header
 	width: 100%;
 	border-bottom: 10px solid transparent;
 	border-image: url(Source/vague.png) 150 round;
+
 
 
 }
@@ -59,17 +94,23 @@ header
 
 
 }
+#passion
+{ 
 
+
+background:  linear-gradient(to bottom, #33ccff 0%, #057a7a 70%,#339933 100%);
+}
 #video
 {
-	margin-left: 50%;
-	transform: translateX(-50%);
-	width: 50%;
+	float: right;
+	width: 40%;
 }
 
 video
 {
 	width: 100%;
+	border-radius: 10px 10px 10px 10px;
+
 }
 
 #kite img
@@ -93,13 +134,15 @@ video
 	48%{
 
 		transform: rotate3d(0,1,0,0deg);
+
+
 	}
 	50%{
 		margin-left: 90%;
-		transform: rotate3d(0,1,0,180deg);
+		transform: rotate3d(0,1,0,180deg);	
 	}
 	98%{
-		transform: rotate3d(0,1,0,180deg);
+		transform: rotate3d(0,1,0,180deg) ;
 	}
 	100%{
 		margin-left: 0%;
@@ -118,14 +161,37 @@ img
 
 aside
 {
+	margin-top: 50px;
 	position: fixed;
 	float: left;
 	width: 20%;
+	background:#e9db89;
+
+	border: 1px black solid;
+	/*
+	background-image: url("Source/kai.png");
+	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	*/
 }
 
 form input
 {
 	width: 90%;
+}
+
+nav li:hover
+{
+
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+a
+{
+	color:black;
+	text-decoration: none;
 }
 
 
@@ -134,7 +200,6 @@ form input
 main
 {
 	width:80%;
-	background: yellow;
 	float: right;
 }
 
@@ -143,10 +208,14 @@ footer
 {
 	width: 100%;
 	float: left;
+	background: #790509;
+	border-top: 2px solid #057a7a;
 }
 footer p
 {
 	text-align: center;
+	color: white;
 }
+
 
 

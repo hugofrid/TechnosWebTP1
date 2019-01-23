@@ -6,20 +6,30 @@
 	<link href="https://fonts.googleapis.com/css?family=Francois+One|Fugaz+One|Quando" rel="stylesheet">
 </head>
 <body>
-	<header><h1>Hugo Fridlansky<h1/></header>
+	<a href="#"><header><h1>Hugo Fridlansky<h1/></header></a>
 	
 	<div class="content">
 		<aside>
 		
 		<nav>
-			<ul>
-					<li>A propos</li>
-					<li>Mes competances</li>
-					<li>Ma passion</li>
+			<ul >
+					<li style="list-style-image: url('Source/about16.png'); "><a href="#about">A propos</a></li><br>
+					<li style="list-style-image: url('Source/skills16.png');"><a href="#experience">Mes competances</a></li><br>
+					<li style="list-style-image: url('Source/passion16.png');"><a href="#animation">Ma passion</a></li><br>
 					
 			</ul>
 			<hr>
 		</nav>
+		<section>
+			<p style="text-align: center">Find me & my work</p>
+			<ul>
+				<li>Mon Linkedin</li>
+				<li>Mon Github</li>
+				<li>Mon CodePen</li>
+			</ul>
+		</section>
+
+		<hr>
 		<p style="text-align: center;">Mon Contact</p>
 		<form style="padding:5px;"" >
 
@@ -34,8 +44,8 @@
 		</aside>
 	
 	<main>
-		<section id="aboout" class="part">
-			<p><h2>qui suis-je?</h2></p>
+		<section id="about" class="part">
+			<p><h2>Qui suis-je?</h2></p>
 			<div style="width:60%; padding:10px; float: left;">
 				
 				<p>Futur ingénieur généraliste et high-tech à l'ECE Paris. <br/>
@@ -55,17 +65,19 @@
 		</section>
 
 		
-		<section id="experience" class="part" style=" background: green;">
+		<section id="experience" class="part" >
 			<p><h2>Mes compétences</h2></p>
 			<div id="logo" style="height:300px; width: 100%;">
-				<img src="Source/logoandroidstudio.png"  alt="logo android studio">
-				<img src="Source/logojava.png" alt="logo java">
-				<img src="Source/logophp.png" alt="logo php">
-				<img src="Source/logohtml.png" alt="logo HTML">
-				<img src="Source/logocss.png" alt="logo CSS">
-				<img src="Source/logojs.png" alt="logo JavaScript">
+				<article><img src="Source/logoandroidstudio.png"  alt="logo android studio"><p>Android Studio</p></article>
+				<article><img src="Source/logojava.png" alt="logo java"><p>Java</p></article>
+				<article><img src="Source/logophp.png" alt="logo php"><p>php</p></article>
+				<article><img src="Source/logohtml.png" alt="logo HTML"><p>HTML</p></article>
+				<article><img src="Source/logocss.png" alt="logo CSS"><p>CSS</p></article>
+				<article><img src="Source/logojs.png" alt="logo JavaScript"><p>JS</p></article>
 			</div>
 		</section>
+
+
 		<section id="animation" class="part">
 			<p><h2>Ma passion</h2></p>
 			<div id="kite">
@@ -75,14 +87,17 @@
 			
 		</section>
 
-		<section  class="part">
-			<div id="video">
-				<video controls>
+		<section  id="passion" class="part">
+			<p style="float:left; margin-left:10px;">
+				Ma plus grande passion est la pratique du kite surf</p>
+
+			
+				<video id="video" controls>
   					<source src="Source/kite.mp4" type="video/mp4">
   					<p>Votre navigateur ne prend pas en charge les vidéos HTML5. <br>
    				  	Voici <a href="Source/kite.mp4">un lien pour télécharger la vidéo</a>.</p>
 				</video>
-			</div>
+			
 		</section>
 
 	</main>
