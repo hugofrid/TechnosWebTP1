@@ -17,7 +17,7 @@ h1
 h2
 {
 	margin-top:50px;
-	margin-left: 10px;
+	margin-left: 55px;
 }
 
 header
@@ -30,7 +30,7 @@ header
 	color: white;
 	text-align: center;
 	z-index: 2;
-	border-bottom: 2px solid #057a7a;
+	border-bottom: 1px solid #057a7a;
 }
 
 .content
@@ -42,13 +42,35 @@ header
 }
 
 #experience
-{
-	border-radius: 25px 25px 25px 25px;
-	width: 90%;
-	transform: translateX(5%);
+{	
  	color: white;
-	background:rgba(121, 5, 9);
+	background:rgb(121, 5, 9);
+	border-top: 2px solid #057a7a;
+	border-bottom: 2px solid #057a7a;
+
 }
+
+#about
+{
+	background-image:linear-gradient(90deg,white 0 30%,rgba(121, 5, 9,0.5)) , url("Source/velo.jpg") ;
+	background-position: bottom right; 
+  	background-repeat: no-repeat;
+  	background-size: auto,cover;
+  	background-attachment: fixed;
+
+	
+}
+
+
+#about img
+{
+	box-shadow: -5px 5px 15px rgba(121, 5, 9,0.9);
+	width: 100%;
+	border-radius: 15px;
+
+}
+
+
 .part
 {
 	float:left;
@@ -62,10 +84,12 @@ header
 
 
 
+
+
 #logo article 
 {
 
-	width: 14%;
+	width: 10%;
 	margin:auto;
 	text-align: center;
 	flex-direction: row;
@@ -82,33 +106,43 @@ header
 	width: 100%;
 	border-bottom: 10px solid transparent;
 	border-image: url(Source/vague.png) 150 round;
-
-
-
+	background-image: url("Source/fondciel.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 
 #kite
 {
 	width: 100%;
 	height: 90px;
+	z-index: 100;
+	border-top: 2px solid #057a7a;
 
 
 }
 #passion
 { 
 
-
-background:  linear-gradient(to bottom, #33ccff 0%, #057a7a 70%,#339933 100%);
+	background-image: url("Source/sunset.jpg");
+	background-position: top left; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	height: 80%;
 }
 #video
 {
-	float: right;
-	width: 40%;
+	width: 35%;
+
 }
 
 video
 {
+
 	width: 100%;
+	margin-right: 100px; 
 	border-radius: 10px 10px 10px 10px;
 
 }
@@ -117,6 +151,7 @@ video
 {
 	height: 100%;
 	animation: anim_logo 7s normal 0.1s infinite ease-in;	
+
 }
 
 @keyframes anim_logo
@@ -152,22 +187,21 @@ video
 }
 
 
-img
-{
-	padding:5px; 
-}
-
-
 
 aside
 {
-	margin-top: 50px;
+	
 	position: fixed;
-	float: left;
+	right: 0%;
 	width: 20%;
-	background:#e9db89;
-
+	height: 90%;
+	border-radius: 10px;
+	background:#790509;
 	border: 1px black solid;
+	color: white;
+	transform: translateY(-100%);
+	transition:ease 0.2s;
+	z-index: 200;
 	/*
 	background-image: url("Source/kai.png");
 	background-position: center; 
@@ -176,31 +210,37 @@ aside
   	*/
 }
 
+input[type=checkbox]:checked ~ aside 
+{
+	transform: translateX(0%);
+	transition:ease 0.2s;
+	z-index: 350;
+}
+
+
 form input
 {
 	width: 90%;
 }
 
-nav li:hover
+a:hover
 {
+	text-decoration: underline;
 
-	font-size: 1.2em;
-	cursor: pointer;
+
 }
 
 a
 {
-	color:black;
+	color:white;
 	text-decoration: none;
 }
 
 
-
-
-main
+main 
 {
-	width:80%;
-	float: right;
+	width:100%;
+
 }
 
 
@@ -208,14 +248,54 @@ footer
 {
 	width: 100%;
 	float: left;
-	background: #790509;
-	border-top: 2px solid #057a7a;
+	background: #55b4f8;/*#057a7a;*/
+
+
 }
+
 footer p
 {
 	text-align: center;
-	color: white;
+
+	margin:0;
+	font-size: 0.8em;
 }
+
+@media only screen and (max-width: 740px) 
+{
+	aside
+	{
+		position: relative;
+		float: left;
+		width: 100%;
+		z-index: 0;
+		height: auto;
+		transform: translateY(0%);
+		border-radius: 0px
+	}
+
+	ul
+	{
+		position: static;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+
+	#Menu
+	{
+		display: none;
+	}
+
+	#arrow
+	{
+		display: none;
+	}
+	
+}
+
+
 
 
 

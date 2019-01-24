@@ -6,67 +6,40 @@
 	<link href="https://fonts.googleapis.com/css?family=Francois+One|Fugaz+One|Quando" rel="stylesheet">
 </head>
 <body>
-	<a href="#"><header><h1>Hugo Fridlansky<h1/></header></a>
-	
-	<div class="content">
-		<aside>
+	<header>
 		
-		<nav>
-			<ul >
-					<li style="list-style-image: url('Source/about16.png'); "><a href="#about">A propos</a></li><br>
-					<li style="list-style-image: url('Source/skills16.png');"><a href="#experience">Mes competances</a></li><br>
-					<li style="list-style-image: url('Source/passion16.png');"><a href="#animation">Ma passion</a></li><br>
-					
-			</ul>
-			<hr>
-		</nav>
-		<section>
-			<p style="text-align: center">Find me & my work</p>
-			<ul>
-				<li>Mon Linkedin</li>
-				<li>Mon Github</li>
-				<li>Mon CodePen</li>
-			</ul>
-		</section>
+		<h1>Hugo Fridlansky<h1/>
+		</header>
 
-		<hr>
-		<p style="text-align: center;">Mon Contact</p>
-		<form style="padding:5px;"" >
+	
+		
+		
 
-			<label>Email : </label><br>
-			<input type="Email" name="mail"><br>
-			<label>Nom :</label><br>
-			<input type="text" name="name"><br>
-			<label>Message :</label><br>
-			<input type="" name="message"><br>
-			<input type="submit" name="envoyer"> 
-		</form>
-		</aside>
 	
 	<main>
 		<section id="about" class="part">
-			<p><h2>Qui suis-je?</h2></p>
-			<div style="width:60%; padding:10px; float: left;">
+			<h2>Qui suis-je?</h2>
+			<div style="width:50%; float: left;">
 				
-				<p>Futur ingénieur généraliste et high-tech à l'ECE Paris. <br/>
+				<p style="margin-left: 35px;">Futur ingénieur généraliste et high-tech à l'ECE Paris. <br/>
 				Spécialité OCRES ( Objets Connectés Réseaux et Services) . <br/>
 				Je suis passionné par le monde du digital et de l’UX design. <br/>
 				Intéressé par le développement web, mobile et les Progressives Web Apps.<p/> 
 				
-				<p>J’aime travailler sous la forme de projet, je suis motivé et aime apprendre de nouvelles choses pour avancer dans ces projets. <p/>
+				<p style="margin-left: 35px;">J’aime travailler sous la forme de projet, je suis motivé et aime apprendre de nouvelles choses pour avancer dans ces projets. <p/>
 				
-				<p>Mon séjour de 6 mois à l‘étranger, à Malmö en Suède, dans le cadre de mes études, a développé mon goût pour la découverte des différentes cultures, de la vie courante et dans les méthodes de travail.<p/> 
+				<p style="margin-left: 35px;">Mon séjour de 6 mois à l‘étranger, à Malmö en Suède, dans le cadre de mes études, a développé mon goût pour la découverte des différentes cultures, de la vie courante et dans les méthodes de travail.<p/> 
 			
-				<p>Mes études m’ont permis de développer mon leadership, de par mon le rôle de chef de projet que j’ai pu avoir, mais aussi mon esprit d’équipe.<p/> 
+				<p style="margin-left: 35px;">Mes études m’ont permis de développer mon leadership, de par le rôle de chef de projet que j’ai pu avoir, mais aussi mon esprit d’équipe.<p/> 
 			</div>
-			<div style="float:left; width:35%; margin-top: 10px; ">
-				<img src="Source/photoMoi.jpeg" alt="photo de moi" style="width: 100%;border-radius: 15%;"/>
+			<div style="float:right; width:30%; margin-top: 10px; margin-right: 35px;">
+				<img src="Source/photoMoi.jpeg" alt="photo de moi" />
 			</div>
 		</section>
 
 		
 		<section id="experience" class="part" >
-			<p><h2>Mes compétences</h2></p>
+			<h2>Mes compétences</h2>
 			<div id="logo" style="height:300px; width: 100%;">
 				<article><img src="Source/logoandroidstudio.png"  alt="logo android studio"><p>Android Studio</p></article>
 				<article><img src="Source/logojava.png" alt="logo java"><p>Java</p></article>
@@ -78,34 +51,81 @@
 		</section>
 
 
-		<section id="animation" class="part">
-			<p><h2>Ma passion</h2></p>
-			<div id="kite">
-
-				<img  src="source/logokitesurf.png" ">
-			</div>
-			
-		</section>
+		
 
 		<section  id="passion" class="part">
-			<p style="float:left; margin-left:10px;">
-				Ma plus grande passion est la pratique du kite surf</p>
+			<h2>Ma passion</h2>
+			
+				<p style="float:left; margin-left: 35px;">
+				Ma plus grande passion est la pratique du kite surf<br>
+				 </p>
 
 			
-				<video id="video" controls>
+				<video muted id="video" controls style="float: right; margin-left: 10px;">
   					<source src="Source/kite.mp4" type="video/mp4">
   					<p>Votre navigateur ne prend pas en charge les vidéos HTML5. <br>
    				  	Voici <a href="Source/kite.mp4">un lien pour télécharger la vidéo</a>.</p>
 				</video>
 			
 		</section>
+		<section id="animation" class="part">
+			
+			<div id="kite">
 
+				<img  src="source/logokitesurf.png">
+			</div>
+			
+		</section>
+	
 	</main>
-</div>
+	<input type="checkbox" id="toggle" style=" display:none; position:fixed; transform: translate(-100%,-100%);">
+		
+		<label for="toggle" id="arrow" style="position:fixed; top:15px; right:20.2%;  z-index: 300; transform: ease 0.2s;">
+			<img src="Source/darrow.png" >
+		</label>
+		<h3 id="Menu" style="text-align: center; position: fixed; width: 20%; z-index: 300; color:white; right:0;">Menu</h3>
+		<aside id="borderNav">
 
+		<nav>
+
+			<ul >
+					<li style="list-style-image: url('Source/about16w.png'); "><a href="#about" target="_blank">A propos</a></li><br>
+					<li style="list-style-image: url('Source/skills16w.png');"><a href="#experience" target="_blank">Mes competances</a></li><br>
+					<li style="list-style-image: url('Source/passion16w.png');"><a href="#animation" target="_blank">Ma passion</a></li><br>
+					
+			</ul>
+			
+			<hr>
+		</nav>
+		<section>
+			<p style="text-align: center">Find me & my work</p>
+			<ul>
+				<a href="https://www.linkedin.com/in/hugo-fridlansky/" target="_blank"><li style="list-style-image: url('Source/linkedin-sign.png');">Mon Linkedin</li></a> <br>
+				<a href="https://github.com/hugofrid" style="list-style-image: url('Source/github.png');" target="_blank"><li>Mon Github</li></a>
+				
+			</ul>
+		</section>
+
+		<hr>
+		<p style="text-align: center;">Mon Contact</p>
+		<form style="padding:5px;" >
+
+			<label>Email : </label><br>
+			<input type="Email" name="mail"><br><br>
+			<label>Nom :</label><br>
+			<input type="text" name="name"><br><br>
+			<label>Message :</label><br>
+			<input type="text" name="message" style="height: 5em;"><br><br>
+			<input type="submit" name="envoyer"> 
+		</form>
+		
+		</aside>
 	<footer>
 		<p>developped by Hugo Fridlansky Himself</p>
 	</footer>
+
+
+	
 
 </body>
 </html>
