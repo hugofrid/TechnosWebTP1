@@ -20,6 +20,11 @@ h2
 	margin-left: 55px;
 }
 
+p
+{
+	font-family: 'Francois One', cursive;
+}
+
 header
 {
 	position:fixed;
@@ -89,7 +94,7 @@ header
 #logo article 
 {
 
-	width: 10%;
+	width: 8%;
 	margin:auto;
 	text-align: center;
 	flex-direction: row;
@@ -141,6 +146,7 @@ header
 video
 {
 
+	
 	width: 100%;
 	margin-right: 100px; 
 	border-radius: 10px 10px 10px 10px;
